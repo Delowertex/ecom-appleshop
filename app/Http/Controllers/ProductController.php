@@ -4,7 +4,7 @@ use App\Helper\ResponseHelper;
 use App\Models\CustomerProfile;
 use App\Models\Product;
 use App\Models\ProductCart;
-use App\Models\ProductDetails;
+use App\Models\ProductDetail;
 use App\Models\ProductReview;
 use App\Models\ProductSlider;
 use App\Models\ProductWish;
@@ -55,7 +55,7 @@ class ProductController extends Controller
 
     public function ProductDetailsById(Request $request):JsonResponse{
 
-        $data=ProductDetails::where('product_id',$request->id)->with('product','product.brand','product.category')->get();
+        $data=ProductDetail::where('product_id',$request->id)->with('product','product.brand','product.category')->get();
 
         return ResponseHelper::Out('success',$data,200);
     }

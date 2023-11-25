@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('policies', function (Blueprint $table) {
+        Schema::create('policy', function (Blueprint $table) {
             $table->id();
             $table->enum('type',['about','refund','terms','how to buy','contact','complain']);
             $table->longText('des');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('policies');
+        Schema::dropIfExists('policy');
     }
 };
