@@ -15,8 +15,7 @@ class ProductController extends Controller
 {
 
 
-    public function WishList()
-    {
+    public function WishList(){
         return view('pages.wish-list-page');
     }
 

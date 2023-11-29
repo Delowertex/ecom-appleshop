@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class CustomerProfile extends Model
 {
+    //protected $table = 'customer_profiles';
     protected $fillable = [
         'cus_name',
         'cus_add',

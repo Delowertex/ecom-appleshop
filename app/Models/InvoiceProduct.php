@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class InvoiceProduct extends Model
 {
+    protected $table = 'invoice_product';
     protected $fillable = ['invoice_id', 'product_id', 'qty', 'sale_price','user_id'];
 
     public function product(): BelongsTo

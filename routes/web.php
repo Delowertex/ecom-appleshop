@@ -9,13 +9,15 @@ use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
-use App\Http\Middleware\TokenAuthenticate;
+use App\Http\Middleware\TokenAuthenticateMiddleware;
 
 
 
 
 // Home Page
-//Route::get('/', [HomeController::class, 'HomePage']);
+Route::get('/', [HomeController::class, 'HomePage']);
+
+
 Route::get('/by-category', [CategoryController::class, 'ByCategoryPage']);
 Route::get('/by-brand', [BrandController::class, 'ByBrandPage']);
 Route::get('/policy', [PolicyController::class, 'PolicyPage']);
@@ -59,5 +61,26 @@ Route::get("/PolicyByType/{type}",[PolicyController::class,'PolicyByType']);
 Route::get('/UserLogin/{UserEmail}', [UserController::class, 'UserLogin']);
 Route::get('/VerifyLogin/{UserEmail}/{OTP}', [UserController::class, 'VerifyLogin']);
 Route::get('/logout',[UserController::class,'UserLogout']);
+
+// User Profile
+Route::post('/CreateProfile', [ProfileController::class, 'CreateProfile'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get('/ReadProfile', [ProfileController::class, 'ReadProfile'])->middleware([TokenAuthenticateMiddleware::class]);
+// Product Review
+Route::post('/CreateProductReview', [ProductController::class, 'CreateProductReview'])->middleware([TokenAuthenticateMiddleware::class]);
+
+// Product Wish
+Route::get('/ProductWishList', [ProductController::class, 'ProductWishList'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get('/CreateWishList/{product_id}', [ProductController::class, 'CreateWishList'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get('/RemoveWishList/{product_id}', [ProductController::class, 'RemoveWishList'])->middleware([TokenAuthenticateMiddleware::class]);
+
+// Product Cart
+Route::post('/CreateCartList', [ProductController::class, 'CreateCartList'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get('/CartList', [ProductController::class, 'CartList'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get('/DeleteCartList/{product_id}', [ProductController::class, 'DeleteCartList'])->middleware([TokenAuthenticateMiddleware::class]);
+
+// Invoice and payment
+Route::get("/InvoiceCreate",[InvoiceController::class,'InvoiceCreate'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get("/InvoiceList",[InvoiceController::class,'InvoiceList'])->middleware([TokenAuthenticateMiddleware::class]);
+Route::get("/InvoiceProductList/{invoice_id}",[InvoiceController::class,'InvoiceProductList'])->middleware([TokenAuthenticateMiddleware::class]);
 
 
