@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\ProductCart;
 use App\Models\ProductDetail;
 use App\Models\ProductReview;
+use App\Models\Collection;
 use App\Models\ProductSlider;
 use App\Models\ProductWish;
 use Illuminate\Http\JsonResponse;
@@ -161,5 +162,9 @@ class ProductController extends Controller
         return ResponseHelper::Out('success',$data,200);
     }
 
+    public function Collection(){
+        $data = Collection::all();
+        return ResponseHelper::Out('success',$data,200);
+    }
 
 }

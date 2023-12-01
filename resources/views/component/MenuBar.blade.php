@@ -35,7 +35,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="{{url("/")}}">
-                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                    <img class="logo_dark" src="{{ asset('images/logo_dark.png') }}" alt="logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
                     <span class="ion-android-menu"></span>
@@ -46,8 +46,9 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle nav-link" href="#" data-bs-toggle="dropdown">Products</a>
                             <div class="dropdown-menu">
-                                <ul id="CategoryItem">  Huefix_R & Huewash LTW
-
+                                <ul id="CategoryItem"> 
+                                    {{-- <li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">${item['categoryName']}</a></li> --}}
+                                    <li><a class="dropdown-item nav-link nav_item" href="#">Item</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -70,13 +71,13 @@
 </header>
 
 <script>
-    Category();
-    async function Category(){
-        let res=await axios.get("/CategoryList");
-        $("#CategoryItem").empty()
-        res.data['data'].forEach((item,i)=>{
-            let EachItem= ` <li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">${item['categoryName']}</a></li>`
-            $("#CategoryItem").append(EachItem);
-        })
-    }
+    // Category();
+    // async function Category(){
+    //     let res=await axios.get("/CategoryList");
+    //     $("#CategoryItem").empty()
+    //     res.data['data'].forEach((item,i)=>{
+    //         let EachItem= ` <li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">${item['categoryName']}</a></li>`
+    //         $("#CategoryItem").append(EachItem);
+    //     })
+    // }
 </script>
