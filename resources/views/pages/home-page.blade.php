@@ -12,4 +12,28 @@
     @include('component.home-page.footer-section') --}}
     @include('component.MenuBar')
     @include('component.HeroSlider')
+    @include('component.TopCategories')
+    @include('component.ExclusiveProducts')
+    @include('component.TopBrands')
+    @include('component.Footer')
+
+    <script>
+        (async()=>{
+            await Catgegory();
+
+            await HeroSlider();
+
+            await TopCategory();
+            $(".preloader").delay(700).fadeOut(700).addClass('loaded');
+            await Popular();
+
+            await New();
+
+            await TopItem();
+
+            await Special();
+            await TopBrand();
+        })()
+    </script>
+
 @endsection

@@ -48,7 +48,7 @@
                             <div class="dropdown-menu">
                                 <ul id="CategoryItem"> 
                                     {{-- <li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">${item['categoryName']}</a></li> --}}
-                                    <li><a class="dropdown-item nav-link nav_item" href="#">Item</a></li>
+                                    {{-- <li><a class="dropdown-item nav-link nav_item" href="#">Item</a></li> --}}
                                 </ul>
                             </div>
                         </li>
@@ -71,6 +71,16 @@
 </header>
 
 <script>
+    
+    async function Catgegory() {
+        let res = await axios.get('/CategoryList');
+        $('#CategoryItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let EachItem = `<li><a class="dropdown-item nav-link nav_item" href="#">${item['categoryName']}</a></li>`
+            $('#CategoryItem').append(EachItem);
+        })
+    }
+
     // Category();
     // async function Category(){
     //     let res=await axios.get("/CategoryList");

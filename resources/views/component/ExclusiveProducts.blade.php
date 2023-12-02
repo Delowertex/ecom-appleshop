@@ -31,30 +31,530 @@
                 <div class="tab-pane fade show active" id="Popular" role="tabpanel" aria-labelledby="arrival-tab">
                     <div id="PopularItem" class="row shop_container">
 
-
+                        {{-- <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/flutter.png" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Flutter</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> --}}
+                        {{-- <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/flutter.png" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Flutter</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/flutter.png" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Flutter</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/flutter.png" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Flutter</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> --}}
 
 
                     </div>
                 </div>
                 <div class="tab-pane fade" id="New" role="tabpanel" aria-labelledby="sellers-tab">
                     <div id="NewItem"  class="row shop_container">
+                        {{-- <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/react.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">React</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/react.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">React</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/react.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">React</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/react.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">React</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  --}}
 
 
                     </div>
                 </div>
                 <div class="tab-pane fade" id="Top" role="tabpanel" aria-labelledby="featured-tab">
                     <div id="TopItem" class="row shop_container">
-
+                        {{-- <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img4.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img4.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img4.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img4.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="tab-pane fade" id="Special" role="tabpanel" aria-labelledby="special-tab">
                     <div id="SpecialItem" class="row shop_container">
-
+                        {{-- <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img1.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 1</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img1.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 1</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img1.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 1</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img1.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 1</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="tab-pane fade" id="Trending" role="tabpanel" aria-labelledby="special-tab">
                     <div id="TrendingItem"  class="row shop_container">
-
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img5.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 5</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img5.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 5</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img5.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 5</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/shop_banner_img5.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">Shop Banner 5</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,46 +562,217 @@
     </div>
 </div>
 
-
-
 <script>
+    
+    async function Popular() {
+        let res = await axios.get("/ListProductByRemark/popular");
+        $('#PopularItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let PolularItemd = `<div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="${item['image']}" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">${item['title']}</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">${item['price']}</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:${item['star']}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $('#PopularItem').append(PolularItemd);      
+        });
+    }
 
-Popular();
+
+    async function New() {
+        let res = await axios.get("/ListProductByRemark/new");
+        $('#NewItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let NewItemd = `<div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="images/react.jpg" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">React</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">120</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $('#NewItem').append(NewItemd);      
+        });
+    }
+
+
+    async function TopItem() {
+        let res = await axios.get("/ListProductByRemark/top");
+        $('#TopItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let itemTop = `<div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="${item['image']}" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">${item['title']}</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">${item['price']}</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:${item['star']}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $('#TopItem').append(itemTop);      
+        });
+    }
+
+
+    async function Special() {
+        let res = await axios.get("/ListProductByRemark/special");
+        $('#SpecialItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let itemSpecial = `<div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="${item['image']}" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">${item['title']}</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">${item['price']}</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:${item['star']}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $('#SpecialItem').append(itemSpecial);      
+        });
+    }
+
+
+    async function Treading() {
+        let res = await axios.get("/ListProductByRemark/special");
+        $('#TrendingItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let itemSpecial = `<div class="col-lg-3 col-md-4 col-6">
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="${item['image']}" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="#">${item['title']}</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">${item['price']}</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:${item['star']}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $('#TrendingItem').append(itemSpecial);      
+        });
+    }
+
+</script>
+
+{{-- <script>
+
+
 async function Popular(){
     let res=await axios.get("/ListProductByRemark/popular");
     $("#PopularItem").empty();
     res.data['data'].forEach((item,i)=>{
         let EachItem=`<div class="col-lg-3 col-md-4 col-6">
-            <div class="product">
-                <div class="product_img">
-                    <a href="#">
-                        <img src="${item['image']}" alt="product_img9">
-                    </a>
-                    <div class="product_action_box">
-                        <ul class="list_none pr_action_btn">
-                            <li><a href="/details?id=${item['id']}" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="product_info">
-                    <h6 class="product_title"><a  href="/details?id=${item['id']}">${item['title']}</a></h6>
-                    <div class="product_price">
-                        <span class="price">$ ${item['price']}</span>
-                    </div>
-                    <div class="rating_wrap">
-                        <div class="rating">
-                            <div class="product_rate" style="width:${item['star']}%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <div class="product">
+                                <div class="product_img">
+                                    <a href="#">
+                                        <img src="${item['image']}" alt="product_img9">
+                                    </a>
+                                    <div class="product_action_box">
+                                        <ul class="list_none pr_action_btn">
+                                            <li><a href="/details?id=${item['id']}" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a  href="/details?id=${item['id']}">${item['title']}</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$ ${item['price']}</span>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="rating">
+                                            <div class="product_rate" style="width:${item['star']}%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>`
         $("#PopularItem").append(EachItem);
     })
 
 }
 
-New ();
+
 async function New (){
     let res=await axios.get("/ListProductByRemark/new");
     $("#NewItem").empty();
@@ -137,7 +808,7 @@ async function New (){
     })
 }
 
-Top();
+
 async function Top(){
     let res=await axios.get("/ListProductByRemark/top");
     $("#TopItem").empty();
@@ -175,7 +846,7 @@ async function Top(){
 }
 
 
-Special();
+
 async function Special(){
     let res=await axios.get("/ListProductByRemark/special");
     $("#SpecialItem").empty();
@@ -214,7 +885,7 @@ async function Special(){
 }
 
 
-Trending();
+
 async function Trending(){
     let res=await axios.get("/ListProductByRemark/trending");
     $("#TrendingItem").empty();
@@ -251,5 +922,5 @@ async function Trending(){
     })
 }
 
-</script>
+</script> --}}
 
