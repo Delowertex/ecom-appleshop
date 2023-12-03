@@ -571,7 +571,7 @@
             let PolularItemd = `<div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product_img">
-                                    <a href="#">
+                                    <a href="/details?id=${item['id']}">
                                         <img src="${item['image']}" alt="product_img9">
                                     </a>
                                     <div class="product_action_box">
@@ -605,7 +605,7 @@
             let NewItemd = `<div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product_img">
-                                    <a href="#">
+                                    <a href="/details?id=${item['id']}">
                                         <img src="images/react.jpg" alt="product_img9">
                                     </a>
                                     <div class="product_action_box">
@@ -639,7 +639,7 @@
             let itemTop = `<div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product_img">
-                                    <a href="#">
+                                    <a href="/details?id=${item['id']}">
                                         <img src="${item['image']}" alt="product_img9">
                                     </a>
                                     <div class="product_action_box">
@@ -673,7 +673,7 @@
             let itemSpecial = `<div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product_img">
-                                    <a href="#">
+                                    <a href="/details?id=${item['id']}">
                                         <img src="${item['image']}" alt="product_img9">
                                     </a>
                                     <div class="product_action_box">
@@ -707,7 +707,7 @@
             let itemSpecial = `<div class="col-lg-3 col-md-4 col-6">
                             <div class="product">
                                 <div class="product_img">
-                                    <a href="#">
+                                    <a href="/details?id=${item['id']}">
                                         <img src="${item['image']}" alt="product_img9">
                                     </a>
                                     <div class="product_action_box">

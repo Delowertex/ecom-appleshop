@@ -37,12 +37,12 @@
             let EachItem=`<div class="col-lg-3 col-md-4 col-6">
                                 <div class="product">
                                     <div class="product_img">
-                                        <a href="#">
+                                        <a href="/details?id=${item['id']}">
                                             <img src="${item['image']}" alt="product_img9">
                                         </a>
                                         <div class="product_action_box">
                                             <ul class="list_none pr_action_btn">
-                                                <li><a href="#" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                                                <li><a href="/details?id=${item['id']}" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
 
                                             </ul>
                                         </div>

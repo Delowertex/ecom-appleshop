@@ -32,6 +32,14 @@
     async function Policy(){
     let searchParams=new URLSearchParams(window.location.search);
     let type=searchParams.get('type');
+
+    if(type==='type'){
+        $("#policyName").text("Type Policy");
+    }
+
+    if(type==='refund'){
+        $("#policyName").text("Refund Policy");
+    }
     
     let res=await axios.get("/PolicyByType/"+type);
         let des=res.data['des'];

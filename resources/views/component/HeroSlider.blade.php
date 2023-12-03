@@ -52,7 +52,6 @@
     </div>
 </div>
 <script>
-    
     async function HeroSlider() {
         let res = await axios.get("/ListProductSlider");
         $('#carouselSection').empty();
