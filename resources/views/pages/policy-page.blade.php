@@ -2,17 +2,16 @@
 @section('content')
     @include('component.MenuBar')
     @include('component.HeroSlider')
-    @include('component.ByCategoryList')
-    
+    @include('component.PolicyList')
     @include('component.Footer')
 
     <script>
         (async()=>{
-            await Catgegory();
+
             await HeroSlider();
-            await ByCategory();
+            await Policy();
         })()
-        
+       
     </script>
-    
+
 @endsection

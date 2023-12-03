@@ -24,7 +24,7 @@
             await HeroSlider();
 
             await TopCategory();
-            $(".preloader").delay(700).fadeOut(700).addClass('loaded');
+            
             await Popular();
 
             await New();
