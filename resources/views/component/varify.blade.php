@@ -5,15 +5,14 @@
                 <div class="login_wrap">
                     <div class="padding_eight_all bg-white">
                         <div class="heading_s1">
-                            <h3>Login</h3>
+                            <h3>Verification</h3>
                         </div>
                             <div class="form-group mb-3">
-                                <input id="email" type="text" required="" class="form-control" name="email" placeholder="Your Email">
+                                <input id="code" type="text" required="" class="form-control" name="email" placeholder="Verification Code">
                             </div>
                             <div class="form-group mb-3">
-                                <button onclick="Login()" type="submit" class="btn btn-fill-out btn-block" name="login">Next</button>
+                                <button onclick="verify()" type="submit" class="btn btn-fill-out btn-block" name="login">Confirm</button>
                             </div>
-
                     </div>
                 </div>
             </div>
@@ -23,23 +22,29 @@
 
 
 <script>
-    Login();
-    async function Login() {
-        let email = document.getElementById('email').value;
-        if (email.length === 0) {
-            alert("Email Required!");
+    async function verify() {
+
+        let code =document.getElementById('code').value;
+        let email=sessionStorage.getItem('email');
+        if (code.length === 0) {
+            alert("Code Required!");
         } else {
             //$(".preloader").delay(90).fadeIn(100).removeClass('loaded');
-            let res=await axios.get("/UserLogin/"+email);
+            let res=await axios.get("/VerifyLogin/"+email+"/"+code);
             if(res.status===200){
-                sessionStorage.setItem('email',email);
-                window.location.href="/verify"
+                    if(sessionStorage.getItem("last_location")){
+                        window.location.href=sessionStorage.getItem("last_location")
+                    }
+                    else{
+                        window.location.href="/"
+                    }
             }
             else{
                 //$(".preloader").delay(90).fadeOut(100).addClass('loaded');
-                alert("Something Went Wrong");
+                alert("Request Fail")
             }
         }
 
     }
 </script>
+

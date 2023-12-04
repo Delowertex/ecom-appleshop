@@ -179,7 +179,7 @@
                 alert("Product Qty Required !");
             }
             else {
-                $(".preloader").delay(90).fadeIn(100).removeClass('loaded');
+                // $(".preloader").delay(90).fadeIn(100).removeClass('loaded');
                 let res = await axios.post("/CreateCartList",{
                     "product_id":id,
                     "color":p_color,
@@ -204,9 +204,9 @@
     async function AddToWishList() {
 
         try{
-            $(".preloader").delay(90).fadeIn(100).removeClass('loaded');
+            //$(".preloader").delay(90).fadeIn(100).removeClass('loaded');
             let res = await axios.get("/CreateWishList/"+id);
-            $(".preloader").delay(90).fadeOut(100).addClass('loaded');
+            // $(".preloader").delay(90).fadeOut(100).addClass('loaded');
             if(res.status===200){
                 alert("Request Successful")
             }
