@@ -1,3 +1,4 @@
+<!-- START FOOTER -->
 <footer class="footer_dark">
 	<div class="footer_top">
         <div class="container">
@@ -97,5 +98,3 @@
     </div>
 </footer>
 <!-- END FOOTER -->
-
-<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 

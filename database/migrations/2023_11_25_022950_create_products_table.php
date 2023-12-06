@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('image',200);
             $table->boolean('stock');
             $table->float('star');
-            $table->enum('remark',['popular','new','top','special','trending','regular']);
-
+            $table->enum('remark',['newarival','bestseller','featured','specialoffer']);
+ 
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('brand_id');
 

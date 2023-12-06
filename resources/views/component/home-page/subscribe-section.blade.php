@@ -19,3 +19,6 @@
     </div>
 </div>
 <!-- START SECTION SUBSCRIBE NEWSLETTER -->
+
+</div>
+<!-- END MAIN CONTENT -->
