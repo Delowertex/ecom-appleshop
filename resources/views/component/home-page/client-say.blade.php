@@ -10,7 +10,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-9">
-            	<div class="testimonial_wrap testimonial_style1 carousel_slider owl-carousel owl-theme nav_style2" data-nav="true" data-dots="false" data-center="true" data-loop="true" data-autoplay="true" data-items='1'>
+            	<div id="testomonialItem" class="testimonial_wrap testimonial_style1 carousel_slider owl-carousel owl-theme nav_style2" data-nav="true" data-dots="false" data-center="true" data-loop="true" data-autoplay="true" data-items='1'>
                 	<div class="testimonial_box">
                     	<div class="testimonial_desc">
                         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial_box">
+                    {{-- <div class="testimonial_box">
                     	<div class="testimonial_desc">
                         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</p>
                         </div>
@@ -66,10 +66,16 @@
                                 <span>Designer</span>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- END SECTION TESTIMONIAL -->
+
+<script>
+    async function testomonial() {
+        let res = await axios.get("/")
+    }
+</script>

@@ -92,7 +92,7 @@
     let searchParams = new URLSearchParams(window.location.search);
     let id = searchParams.get('id');
 
-    productDetails();
+    
     async function productDetails() {
         let res = await axios.get("/ProductDetailsById/"+id);
         let Details=await res.data['data'];
@@ -200,8 +200,8 @@
         }
     }
 
-    AddToWishList();
     async function AddToWishList() {
+        alert("hi");
 
         try{
             //$(".preloader").delay(90).fadeIn(100).removeClass('loaded');

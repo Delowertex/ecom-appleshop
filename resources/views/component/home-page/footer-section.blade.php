@@ -24,11 +24,11 @@
                 	<div class="widget">
                         <h6 class="widget_title">Useful Links</h6>
                         <ul class="widget_links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Location</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="/policy?type=about">About Us</a></li>
+                            <li><a href="/policy?type=refund">Refund</a></li>
+                            <li><a href="/policy?type=terms">Terms</a></li>
+                            <li><a href="/policy?type=complain">Complain</a></li>
+                            <li><a href="/policy?type=contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>

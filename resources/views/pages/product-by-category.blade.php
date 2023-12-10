@@ -1,18 +1,14 @@
-@extends('layout.app')
+@extends('layout.appp')
 @section('content')
-    @include('component.MenuBar')
-    @include('component.HeroSlider')
-    @include('component.ByCategoryList')
-    
-    @include('component.Footer')
 
-    <script>
-        (async()=>{
-            await Catgegory();
-            await HeroSlider();
-            await ByCategory();
-        })()
-        
-    </script>
-    
+@include('component.home-page.popup')
+@include('component.home-page.header')
+
+
+@include('component.ByCategoryList')
+@include('component.home-page.footer-section')
+
+<script>
+    $(".preloader").delay(100).fadeOut(100).addClass('loaded');
+</script>    
 @endsection

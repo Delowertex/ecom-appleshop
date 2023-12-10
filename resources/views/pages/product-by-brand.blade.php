@@ -1,15 +1,12 @@
-@extends('layout.app')
+@extends('layout.appp')
 @section('content')
-    @include('component.MenuBar')
-    @include('component.ByBrandList')
-    @include('component.TopBrands')
-    @include('component.Footer')
-    <script>
-        (async () => {
-            await Category();
-            await ByBrand();
+@include('component.home-page.popup')
+@include('component.home-page.header')
 
-            await TopBrands();
-        })()
-    </script>
+
+@include('component.ByBrandList')
+@include('component.home-page.footer-section')
+<script>
+    $(".preloader").delay(100).fadeOut(100).addClass('loaded');
+</script> 
 @endsection

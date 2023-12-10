@@ -50,6 +50,7 @@ Route::get('/ListProductByRemark/{remark}', [ProductController::class, 'ListProd
 // Slider
 Route::get('/ListProductSlider', [ProductController::class, 'ListProductSlider']);
 Route::get('/new-collection', [ProductController::class, 'Collection']);
+Route::get('/sale-collection', [ProductController::class, 'SaleCollection']);
 // Product Details
 Route::get('/ProductDetailsById/{id}', [ProductController::class, 'ProductDetailsById']);
 Route::get('/ListReviewByProduct/{product_id}', [ProductController::class, 'ListReviewByProduct']);

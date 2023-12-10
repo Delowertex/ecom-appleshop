@@ -25,13 +25,13 @@
 </div>
 <script>
 
-    
+ByCategory();
     async function ByCategory(){
         let searchParams=new URLSearchParams(window.location.search);
         let id=searchParams.get('id');
-        //alert(id);
+        // alert(id);
 
-        let res=await axios.get(`/ListProductByCategory/${id}`);
+        let res=await axios.get("/ListProductByCategory/" + id);
         $("#byCategoryList").empty();
         res.data['data'].forEach((item,i)=>{
             let EachItem=`<div class="col-lg-3 col-md-4 col-6">

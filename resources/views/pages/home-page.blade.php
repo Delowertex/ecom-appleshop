@@ -34,8 +34,13 @@
             // await Catgegory();
 
             await Banner();
-            // await Arrival();
-            await Featured();
+            $(".preloader").delay(100).fadeOut(100).addClass('loaded');
+            await arrival();
+            await bestseller();
+            await featured();
+            await specialoffer();
+            
+            // await Featured();
 
             // await TopCategory();
             

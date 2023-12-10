@@ -7,9 +7,9 @@
                 	<div class="d-flex align-items-center justify-content-center justify-content-md-start">
                         <div class="lng_dropdown me-2">
                             <select name="countries" class="custome_select">
-                                <option value='en' data-image="assets/images/eng.png" data-title="English">English</option>
-                                <option value='fn' data-image="assets/images/fn.png" data-title="France">France</option>
-                                <option value='us' data-image="assets/images/us.png" data-title="United States">United States</option>
+                                <option value='en' data-image="{{ asset('images/eng.png') }}" data-title="English">English</option>
+                                <option value='fn' data-image="{{ asset('images/fn.png') }}" data-title="France">France</option>
+                                <option value='us' data-image="{{ asset('images/us.png') }}" data-title="United States">United States</option>
                             </select>
                         </div>
                         <div class="me-3">
@@ -40,8 +40,8 @@
     	<div class="container">
             <nav class="navbar navbar-expand-lg"> 
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo_light" src="assets/images/logo_light.png" alt="logo" />
-                    <img class="logo_dark" src="assets/images/logo_dark.png" alt="logo" />
+                    <img class="logo_light" src="{{ asset('images/logo_light.png') }}" alt="logo" />
+                    <img class="logo_dark" src="{{ asset('images/logo_dark.png') }}" alt="logo" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false"> 
                     <span class="ion-android-menu"></span>
@@ -82,48 +82,60 @@
                                     <li class="mega-menu-col col-lg-3">
                                         <ul> 
                                             <li class="dropdown-header">Woman's</li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Vestibulum sed</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Donec porttitor</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-right-sidebar.html">Donec vitae facilisis</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Curabitur tempus</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-load-more.html">Vivamus in tortor</a></li>
+                                            <ul id="womanCategoryItem">
+                                                {{-- <li><a class="dropdown-item nav-link nav_item" href="shop-list-left-sidebar.html">Vestibulum sed</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-left-sidebar.html">Donec porttitor</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-right-sidebar.html">Donec vitae facilisis</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-list.html">Curabitur tempus</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-load-more.html">Vivamus in tortor</a></li> --}}
+                                            </ul>
+                                            
                                         </ul>
                                     </li>
                                     <li class="mega-menu-col col-lg-3">
                                         <ul>
                                             <li class="dropdown-header">Men's</li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-cart.html">Donec vitae ante ante</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="checkout.html">Etiam ac rutrum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="wishlist.html">Quisque condimentum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="compare.html">Curabitur laoreet</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="order-completed.html">Vivamus in tortor</a></li>
+                                            <ul id="manCategoryItem">
+                                                {{-- <li><a class="dropdown-item nav-link nav_item" href="shop-cart.html">Donec vitae ante ante</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="checkout.html">Etiam ac rutrum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="wishlist.html">Quisque condimentum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="compare.html">Curabitur laoreet</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="order-completed.html">Vivamus in tortor</a></li> --}}
+                                            </ul>
+                                            
                                         </ul>
                                     </li>
                                     <li class="mega-menu-col col-lg-3">
                                         <ul>
                                             <li class="dropdown-header">Kid's</li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Donec vitae facilisis</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Quisque condimentum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Etiam ac rutrum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec vitae ante ante</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec porttitor</a></li>
+                                            <ul id="KidCategoryItem">
+                                                {{-- <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Donec vitae facilisis</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Quisque condimentum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Etiam ac rutrum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec vitae ante ante</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec porttitor</a></li> --}}
+                                            </ul>
+                                            
                                         </ul>
                                     </li>
                                     <li class="mega-menu-col col-lg-3">
                                         <ul>
                                             <li class="dropdown-header">Accessories</li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Donec vitae facilisis</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Quisque condimentum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Etiam ac rutrum</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec vitae ante ante</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec porttitor</a></li>
+                                            <ul id="AccessCategoryItem">
+                                                {{-- <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail.html">Donec vitae facilisis</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-left-sidebar.html">Quisque condimentum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-right-sidebar.html">Etiam ac rutrum</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec vitae ante ante</a></li>
+                                                <li><a class="dropdown-item nav-link nav_item" href="shop-product-detail-thumbnails-left.html">Donec porttitor</a></li> --}}
+                                            </ul>
+                                            
                                         </ul>
                                     </li>
                                 </ul>
                                 <div class="d-lg-flex menu_banners row g-3 px-3">
                                     <div class="col-sm-4">
                                         <div class="header-banner">
-                                            <img src="assets/images/menu_banner1.jpg" alt="menu_banner1">
+                                            <img src="{{ asset('images/menu_banner1.jpg') }}" alt="menu_banner1">
                                             <div class="banne_info">
                                                 <h6>10% Off</h6>
                                                 <h4>New Arrival</h4>
@@ -133,7 +145,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="header-banner">
-                                            <img src="assets/images/menu_banner2.jpg" alt="menu_banner2">
+                                            <img src="{{ asset('images/menu_banner2.jpg') }}" alt="menu_banner2">
                                             <div class="banne_info">
                                                 <h6>15% Off</h6>
                                                 <h4>Men's Fashion</h4>
@@ -143,7 +155,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="header-banner">
-                                            <img src="assets/images/menu_banner3.jpg" alt="menu_banner3">
+                                            <img src="{{ asset('images/menu_banner3.jpg') }}" alt="menu_banner3">
                                             <div class="banne_info">
                                                 <h6>23% Off</h6>
                                                 <h4>Kids Fashion</h4>
@@ -250,7 +262,7 @@
                                             <div class="header_banner_content">
                                                 <div class="shop_banner">
                                                     <div class="banner_img overlay_bg_40">
-                                                        <img src="assets/images/shop_banner.jpg" alt="shop_banner"/>
+                                                        <img src="{{ asset('images/shop_banner.jpg') }}" alt="shop_banner"/>
                                                     </div> 
                                                     <div class="shop_bn_content">
                                                         <h5 class="text-uppercase shop_subtitle">New Collection</h5>
@@ -282,12 +294,12 @@
                             <ul class="cart_list">
                                 <li>
                                     <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                    <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product 001</a>
+                                    <a href="#"><img src="{{ asset('images/cart_thamb1.jpg') }}" alt="cart_thumb1">Variable product 001</a>
                                     <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>78.00</span>
                                 </li>
                                 <li>
                                     <a href="#" class="item_remove"><i class="ion-close"></i></a>
-                                    <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed consequat</a>
+                                    <a href="#"><img src="{{ asset('images/cart_thamb2.jpg') }}" alt="cart_thumb2">Ornare sed consequat</a>
                                     <span class="cart_quantity"> 1 x <span class="cart_amount"> <span class="price_symbole">$</span></span>81.00</span>
                                 </li>
                             </ul>
@@ -303,3 +315,49 @@
     </div>
 </header>
 <!-- END HEADER -->
+
+<script>
+    WomenCategory();
+    async function WomenCategory() {
+        let res = await axios.get("/CategoryList");
+        $('#womanCategoryItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let womenItem = `<li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">
+                ${item['categoryName']}</a></li>`
+                $('#womanCategoryItem').append(womenItem);
+        })
+    }
+
+    ManCategory();
+    async function ManCategory() {
+        let res = await axios.get("/CategoryList");
+        $('#manCategoryItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let ManItem = `<li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">
+                ${item['categoryName']}</a></li>`
+                $('#manCategoryItem').append(ManItem);
+        })
+    }
+
+    KidCategory();
+    async function KidCategory() {
+        let res = await axios.get("/CategoryList");
+        $('#KidCategoryItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let KidItem = `<li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">
+                ${item['categoryName']}</a></li>`
+                $('#KidCategoryItem').append(KidItem);
+        })
+    }
+
+    AccessoriesCategory();
+    async function AccessoriesCategory() {
+        let res = await axios.get("/CategoryList");
+        $('#AccessCategoryItem').empty();
+        res.data['data'].forEach((item, i)=>{
+            let AccessCatItem = `<li><a class="dropdown-item nav-link nav_item" href="/by-category?id=${item['id']}">
+                ${item['categoryName']}</a></li>`
+                $('#AccessCategoryItem').append(AccessCatItem);
+        })
+    }
+</script>
