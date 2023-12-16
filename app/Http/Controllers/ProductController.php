@@ -172,7 +172,4 @@ class ProductController extends Controller
         $data = SaleConllection::all();
         return ResponseHelper::Out('success',$data,200);
     }
-
-
-
 }

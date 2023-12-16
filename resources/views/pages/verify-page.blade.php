@@ -1,14 +1,14 @@
-@extends('layout.app')
+@extends('layout.appp')
 @section('content')
-@include('component.MenuBar')
-@include('component.HeroSlider')
-@include('component.varify')
-@include('component.Footer')
+    
+@include('component.home-page.header')
+@include('component.varify-page.varify')
+@include('component.home-page.footer-section')
 
 
 <script>
     (async()=>{
-        await HeroSlider();
+        $(".preloader").delay(100).fadeOut(100).addClass('loaded');
     })()
 </script>
     

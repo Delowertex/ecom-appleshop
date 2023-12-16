@@ -43,7 +43,7 @@
                         <div class="single_banner_info">
                             <h5 class="single_bn_title1">${item['title']}</h5>
                             <h3 class="single_bn_title">${item['subtitle']}</h3>
-                            <a href="shop-left-sidebar.html" class="single_bn_link">Shop Now</a>
+                            <a href="/details?id=${item['id']}" class="single_bn_link">Shop Now</a>
                         </div>
                     </div>
                 </div>`

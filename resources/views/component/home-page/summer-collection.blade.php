@@ -39,7 +39,7 @@
                         <h2>${item['title']}</h2>
                     </div>
                     <h5 class="mb-4">Sale Get up to 50% Off</h5>
-                    <a href="shop-left-sidebar.html" class="btn btn-fill-out rounded-0">Shop Now</a>
+                    <a href="/details?id=${item['id']}" class="btn btn-fill-out rounded-0">Shop Now</a>
                 </div>
             	<div class="medium_divider clearfix"></div>
             </div>

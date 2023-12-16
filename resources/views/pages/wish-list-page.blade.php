@@ -1,15 +1,15 @@
-
-@extends('layout.app')
+@extends('layout.appp')
 @section('content')
-@include('component.MenuBar')
-@include('component.HeroSlider')
-@include('component.WishList')
-@include('component.Footer')
 
+    @include('component.home-page.header')
+    @include('component.home-page.banner')
+    @include('component.wish-page.wishlist')
+    @include('component.home-page.footer-section')
 
 <script>
     (async()=>{
-        await HeroSlider();
+        await Banner();
+            $(".preloader").delay(100).fadeOut(100).addClass('loaded');
     })()
 </script>
     

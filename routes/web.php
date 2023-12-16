@@ -33,12 +33,6 @@ Route::get('/profile', [ProfileController::class, 'ProfilePage']);
 
 
 
-
-
-
-
-
-
 // Brand List
 Route::get('/BrandList', [BrandController::class, 'BrandList']);
 // Category List
@@ -84,5 +78,6 @@ Route::get('/DeleteCartList/{product_id}', [ProductController::class, 'DeleteCar
 Route::get("/InvoiceCreate",[InvoiceController::class,'InvoiceCreate'])->middleware([TokenAuthenticateMiddleware::class]);
 Route::get("/InvoiceList",[InvoiceController::class,'InvoiceList'])->middleware([TokenAuthenticateMiddleware::class]);
 Route::get("/InvoiceProductList/{invoice_id}",[InvoiceController::class,'InvoiceProductList'])->middleware([TokenAuthenticateMiddleware::class]);
+
 
 

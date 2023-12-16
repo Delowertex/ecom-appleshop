@@ -28,8 +28,13 @@
                 	<div class="text-center text-md-end">
                        	<ul class="header_list">
                         	<li><a href="compare.html"><i class="ti-control-shuffle"></i><span>Compare</span></a></li>
-                            <li><a href="wishlist.html"><i class="ti-heart"></i><span>Wishlist</span></a></li>
-                            <li><a href="login.html"><i class="ti-user"></i><span>Login</span></a></li>
+                            <li><a href="{{url("/wish")}}"><i class="ti-heart"></i><span>Wishlist</span></a></li>
+                            @if(Cookie::get('token') !=null)
+                            <li><a href="{{url("/profile")}}"><i class="ti-user"></i><span>Account</span></a></li>
+                            <li><a href="{{url("/logout")}}"><i class="ti-user"></i><span>Logout</span></a></li>
+                            @else
+                            <li><a href="{{url("/login")}}"><i class="ti-user"></i><span>Login</span></a></li>
+                            @endif
 						</ul>
                     </div>
                 </div>
@@ -289,7 +294,7 @@
                             </form>
                         </div><div class="search_overlay"></div>
                     </li>
-                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-bs-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                    <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="{{url("/cart")}}" data-bs-toggle="dropdown"><i class="linearicons-cart"></i><span class="cart_count">2</span></a>
                         <div class="cart_box dropdown-menu dropdown-menu-right">
                             <ul class="cart_list">
                                 <li>
